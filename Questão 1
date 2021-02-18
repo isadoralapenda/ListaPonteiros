@@ -1,0 +1,2 @@
+1.	Qual a utilidade do aprendizado do uso de ponteiro para aplicações em engenharia?
+Ponteiros são variáveis especiais que são utilizadas para guardar endereços de memória, dessa forma, eles são importante pois a partir deles nós podemos encontrar informações em diferentes partes do programa, não havendo necessidade de copiar funções, ou seja,  você apenas retorna à elas( variáveis) com o uso dos ponteiros, deixando o programa mais enxuto, otimizado e rápido, facilitando os projetos dos engenheiros.
