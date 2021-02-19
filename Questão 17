@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+void somaVetor(int *t,int *v,int *z,int n){
+    for(int i=0;i<n;i++){
+        (t+i)=(v+i)+*(z+i);
+    }
+}
+int main(){
+int v[4]={8,-1,0,6},z[4]={-2,5,1,4},t[4];
+somaVetor(t,v,z,4);
+for(int i=0;i<4;i++){
+        printf("%d\n",*(t+i));
+    }
+}
