@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//Uma função é uma sequencia de códigos que possuem um espaço reservado na memória. um ponteiro para uma função
+//é um ponteiro que aponta para o endereço de uma função, permitindo que as funcionalidades da função possam ser
+//acessadas a partir do ponteiro, de modo que o ponteiro venha a ter a mesma sequencia lógica da função apontada.
+
+int subtracao(int x,int y){
+return (x-y); // funçao de subtraçao
+}
+int main(){
+int (*p)(),z,x=2,y=4;//(*p)(), ponteiro para uma função
+p = subtracao;// a funçao subtraçao é atribuida a funçao subtraçao
+z = p(x,y);
+printf("%d",z);
+return 0;
+}
