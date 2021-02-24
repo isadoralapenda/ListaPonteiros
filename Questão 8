@@ -1,1 +1,7 @@
-
+8. inventar uma declaração
+int mat [4], * p, x;
+quais das expressões são válidas? Justifique.
+ a.) p = tapete + 1; eu. (válido) Um ponteiro recebendo um endereço de memória do mesmo tipo dele
+b. p = tapete ++; eu. (inválida) Não é permitido o incremento de endereços de vetores
+ c.) p = ++ tapete; eu. (inválida) Não é permitido o incremento de endereços de vetores
+d) x = (* tapete) ++; eu. (válido) Uma variável inte irax recebendo o valor que está na primeira posição do vetor “mat”, que depois é incrementado
