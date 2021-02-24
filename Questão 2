@@ -1,1 +1,10 @@
-
+2. Seja o seguinte trecho de programa:
+int i = 3, j = 5;
+int * p, * q;
+p = & i;
+q = & j;
+Determinar o valor das seguintes palavras:
+◦ p == & i; // Resposta = retorna "1
+◦ * p - * q; // Resposta = (int) i - (int) j = 3 - 5 = retorna "-2"
+◦ ** & p; // Resposta = ** & p = * (p) = i = retorna "3"
+q = & j; // Resposta = 3 - (int) 3 / (int) 5 + 7 = retorna "10"
