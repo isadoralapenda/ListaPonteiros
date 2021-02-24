@@ -1,1 +1,7 @@
+x para declarado como char? x + 1 = 4092 + 1 * sizeof (char) = 4093 x + 2 = 4092 + 2 * sizeof (char) = 4094 x + 3 = 4092 + 3 * sizeof (char) = 4095  
 
+	x para declarado como int? x + 1 = 4092 + 1 * sizeof (int) = 4092 + 2 = 4094 x + 2 = 4092 + 2 * sizeof (int) = 4096 x + 3 = 4092 + 3 * sizeof (int) = 4098
+
+	x para declarado como float? x + 1 = 4092 + 1 * sizeof (float) = 4092 + 4 = 4096 x + 2 = 4092 + 2 * sizeof (float) = 4100 x + 3 = 4092 + 3 * sizeof (float) = 4104
+
+	x para declarado como double? x + 1 = 4092 + 1 * sizeof (duplo) = 4092 + 8 = 4100 x + 2 = 4092 + 2 * sizeof (duplo) = 4108 x + 3 = 4092 + 3 * sizeof (duplo) = 4116
