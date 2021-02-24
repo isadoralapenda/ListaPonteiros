@@ -1,1 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
 
+int main()
+{
+    int vet[] = {4,9,13};
+  	int i;
+  	for(i=0;i<3;i++){
+   	 printf("%d ",*(vet+i));
+    return 0;
+    }
+    // O primeiro programa possui um vetor 'vet' que armazena valores inteiros.
+	// Através de um laço de repetição(for), ele imprime o conteudo dos blocos de memoria do vetor 'vet'.
+	// Como vet é um inteiro, a cada incremento na variável 'i' ele irá percorrer as posições
+	// do vetor 'vet'( de 4 em 4 bytes, já que cada variável int corresponde a 4 bytes).
+	int main(){
+    int vet[] = {4,9,13};
+  	int i;
+  	for(i=0;i<3;i++){
+  	  printf("%X ",vet+i);
+ 	 }
+	}
+
+	// No segundo programa, ao invés de imprimir o conteúdo dos blocos de memória, o programa
+	// vai imprimir o endereço dos blocos do vetor 'vet' em hexadessimal.
+}
