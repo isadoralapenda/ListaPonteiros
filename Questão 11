@@ -1,1 +1,20 @@
+flutuar aloha [10], coisas [10] [5], * pf, valor = 2,2;
+	int i = 3;
 
+	
+
+	aloha [2] = valor; // valido.
+	
+	scanf ("% f", & aloha); // valido.
+	
+	aloha = "valor"; // invalido, pois uma variável do tipo vetor não pode receber um valor sem especificar o endereço da posição do vetor.
+	
+	printf ("% f", aloha); // valido.
+	
+	coisas [4] [4] = aloha [3]; // valido.
+	
+	coisas [5] = aloha; // invalido, pois não pode atribuir, a uma variável, um vetor, tendo em vista que cada posiçao do vetor se comporta como uma variavel.
+	
+	pf = valor; // invalido, pois a variável 'pf' é do tipo ponteiro, e só pode receber valores do tipo inteiro.
+	
+	pf = aloha; // valido.
