@@ -1,1 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+int compara (int * a, int * b) 
+{
+    return * a- * b;
+}
+void ordenaVetor (int * vet, int qtdE, int (* comparacao) (int * a, int * b)) 
+{
+    int aux, i, j;
+    para (i = 0; i <qtdE; i ++)
+    {
+        para (j = 0; j <qtdE; j ++)
+        {
+            if (comparacao (vet + i, vet + j) <0) 
+            {
+                // elemento em v + j
+                aux = * (vet + i);
+                * (vet + i) = * (vet + j);
+                * (vet + j) = aux;
+            }
+        }
+    }
 
+}
+int main ()
+{
+    int * v, n, i, (* comp) ();
+    comp = compara;
+    scanf ("% d", & n);
+    v = (int *) malloc (n * sizeof (int));
+    para (i = 0; i <n; i ++)
+    {
+        * (v + i) = (ni); // scanf ("% d", (v + i));
+    }
+    ordenaVetor (v, n, comp); 
+    para (i = 0; i <n; i ++)
+    {
+        printf ("% d \ n", * (v + i));
+    livre (v);
+    return 0;
+}
